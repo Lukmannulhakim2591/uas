@@ -1,0 +1,19 @@
+#include <iostream.h>
+#include <conio.h>     
+main ()
+{
+      float nmid, nujian;
+      char ket,nama[20];
+      cout<<"Menentukan lulus tidaknya mahasiswa\n";
+      cout<<"-----------------------------------\n";
+cout<<"Nama mhs       : ";cin>>nama;
+      cout<<"Nilai mid      : ";cin>>nmid;
+      cout<<"Nilai ujian    : ";cin>> nujian;
+      float  rata=(nmid+nujian)/2;
+      if (rata >=60)
+      ket='L';
+      else
+      ket='T';
+      cout<<"\nKeterangan(L=Lulus/T=Tidak) : "<<ket;
+      cout<<"\nNilai rata-rata             : "<<rata;
+      getch();}
