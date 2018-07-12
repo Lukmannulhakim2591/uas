@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+/* valid_operator diinisialisasi dengan 1 */
+int valid_operator = 1;
+char operater;
+float bil1, bil2, hasil;
+
+printf (“Masukkan 2 buah bilangan dan sebuah operatorn”);
+scanf (“%f %c %f”, &bil1, &operater, &bil2);
+
+if (operater == ‘*’)
+hasil = bil1 * bil2;
+
+else if (operater == ‘+’)
+hasil = bil1 + bil2;
+
+else if (operater == ‘-‘)
+hasil = bil1 – bil2;
+
+else if (operater == ‘/’)
+hasil = bil1 / bil2;
+
+else
+valid_operator =0;
+
+if(valid_operator)
+printf(“%g %c %g adalah %gnnmakinrajin.blogspot.com”, bil1, operater, bil2, hasil);
+
+else
+printf(“Ivalid Operatorn”);
+
+getch();
+} 
+
