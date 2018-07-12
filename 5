@@ -1,0 +1,22 @@
+#include <iostream.h>
+#include <conio.h>
+
+float luas_l(int r)
+{  return (3.14*(r*r)); }
+
+float luas_t(int a,int t)
+{  return ((0.5*a)*t);}
+main(){
+   int jari,alas,tinggi;
+   cout<<"Program untuk mencari luas lingkaran\n";
+   cout<<"\nJari-jari = ";cin>>jari;
+   cout<<"\nLuasnya = "<<luas_l(jari);
+
+   cout<<endl;
+   cout<<"\n------------------\n";
+   cout<<endl;
+   cout<<"Program untuk mencari luas segitiga\n";
+   cout<<"\nAlas    = ";cin>>alas;
+   cout<<"\nTinggi  = ";cin>>tinggi;
+   cout<<"\nLuasnya = "<<luas_t(alas,tinggi);
+   getch();}
